@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAFÉ MORI — 森の中の小さな珈琲店</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="logo" data-scroll>CAFÉ&nbsp;MORI</a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#menu" data-scroll>Menu</a></li>
+          <li><a href="#access" data-scroll>Access</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__sub reveal">— since 2014, in the woods —</p>
+      <h1 class="hero__title reveal">森のいちばん奥で<br>淹れる一杯を。</h1>
+      <p class="hero__lead reveal">静けさと香りに包まれる、小さな珈琲店。<br>木漏れ日の下で、ゆっくりとした時間をどうぞ。</p>
+      <a href="#menu" class="btn btn--hero reveal" data-scroll>メニューを見る</a>
+    </div>
+    <a href="#about" class="hero__scroll" data-scroll aria-label="下へスクロール">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about section" id="about">
+    <div class="section__inner about__grid">
+      <div class="about__media reveal">
+        <div class="about__img" role="img" aria-label="ドリップコーヒーを淹れる様子"></div>
+      </div>
+      <div class="about__body reveal">
+        <p class="section__label">About us</p>
+        <h2 class="section__title">一杯に、森のしずけさを。</h2>
+        <p class="about__text">
+          CAFÉ MORI は、深い森のふもとにたたずむ自家焙煎の珈琲店です。
+          世界各地の小さな農園から届く豆を、一杯ずつていねいにハンドドリップ。
+          余計なものをそぎ落とした空間で、香りと味わいに集中できる時間をご用意しています。
+        </p>
+        <ul class="about__features">
+          <li><span>01</span>毎朝焙煎するスペシャルティ珈琲</li>
+          <li><span>02</span>地元産の素材を使った自家製スイーツ</li>
+          <li><span>03</span>森を望む、静かな木の空間</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Menu ===== -->
+  <section class="menu section" id="menu">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <p class="section__label">Our Menu</p>
+        <h2 class="section__title">本日のおすすめ</h2>
+      </div>
+      <div class="menu__grid">
+        <article class="card reveal">
+          <div class="card__img card__img--1" role="img" aria-label="モリ・ブレンド"></div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3 class="card__title">モリ・ブレンド</h3>
+              <span class="card__price">¥580</span>
+            </div>
+            <p class="card__desc">深煎りのコクと、後を引くやわらかな甘み。当店の定番ブレンドです。</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img card__img--2" role="img" aria-label="木漏れ日ラテ"></div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3 class="card__title">木漏れ日ラテ</h3>
+              <span class="card__price">¥640</span>
+            </div>
+            <p class="card__desc">なめらかなフォームと香ばしいエスプレッソ。やさしい口あたりの一杯。</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img card__img--3" role="img" aria-label="森のチーズケーキ"></div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3 class="card__title">森のチーズケーキ</h3>
+              <span class="card__price">¥520</span>
+            </div>
+            <p class="card__desc">濃厚なのに軽やか。珈琲に寄り添う、自家製ベイクドチーズケーキ。</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img card__img--4" role="img" aria-label="ハニーナッツトースト"></div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3 class="card__title">ハニーナッツトースト</h3>
+              <span class="card__price">¥680</span>
+            </div>
+            <p class="card__desc">香ばしいナッツと地元産はちみつ。サクッと軽い朝の定番。</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img card__img--5" role="img" aria-label="水出しコーヒー"></div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3 class="card__title">水出し珈琲</h3>
+              <span class="card__price">¥620</span>
+            </div>
+            <p class="card__desc">8時間かけてじっくり抽出。すっきりまろやかな夏のおすすめ。</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img card__img--6" role="img" aria-label="抹茶テリーヌ"></div>
+          <div class="card__body">
+            <div class="card__head">
+              <h3 class="card__title">抹茶テリーヌ</h3>
+              <span class="card__price">¥560</span>
+            </div>
+            <p class="card__desc">ほろ苦い抹茶のなめらかな生チョコ仕立て。珈琲との相性も抜群。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Access ===== -->
+  <section class="access section" id="access">
+    <div class="section__inner access__grid">
+      <div class="access__info reveal">
+        <p class="section__label">Access</p>
+        <h2 class="section__title">森の入り口で、<br>お待ちしています。</h2>
+        <dl class="access__list">
+          <div>
+            <dt>住所</dt>
+            <dd>〒399-0000<br>長野県森野市木漏日町1-2-3</dd>
+          </div>
+          <div>
+            <dt>営業時間</dt>
+            <dd>8:00 – 18:00<br>（L.O. 17:30）</dd>
+          </div>
+          <div>
+            <dt>定休日</dt>
+            <dd>火曜日・第3水曜日</dd>
+          </div>
+          <div>
+            <dt>電話</dt>
+            <dd>0260-00-0000</dd>
+          </div>
+        </dl>
+        <a href="#hero" class="btn btn--outline" data-scroll>トップへ戻る</a>
+      </div>
+      <div class="access__map reveal">
+        <div class="access__map-inner" role="img" aria-label="お店の地図イメージ">
+          <span class="access__pin">📍</span>
+          <p>CAFÉ MORI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact section" id="contact">
+    <div class="section__inner">
+      <div class="section__head reveal">
+        <p class="section__label">Contact</p>
+        <h2 class="section__title">お問い合わせ</h2>
+        <p class="contact__lead">ご予約・ご質問など、お気軽にお寄せください。</p>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">お名前 <span class="field__req">必須</span></label>
+          <input type="text" id="name" name="name" placeholder="森野 珈琲" autocomplete="name">
+          <p class="field__error" data-error-for="name"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">メールアドレス <span class="field__req">必須</span></label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="email">
+          <p class="field__error" data-error-for="email"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">お問い合わせ内容 <span class="field__req">必須</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+          <p class="field__error" data-error-for="message"></p>
+        </div>
+
+        <div class="contact__submit">
+          <button type="submit" class="btn btn--solid">送信する</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p class="footer__logo">CAFÉ&nbsp;MORI</p>
+    <p class="footer__copy">© 2026 CAFÉ MORI. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
